@@ -1,0 +1,7 @@
+{
+  "name": "@v-rp/cef",
+  "version": "1.0.0",
+  "devDependencies": {
+    "@v-rp/tsconfig": "workspace:^"
+  }
+}

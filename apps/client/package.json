@@ -1,0 +1,11 @@
+{
+  "name": "@v-rp/client",
+  "version": "1.0.0",
+  "dependencies": {
+    "typescript": "^5.2.2"
+  },
+  "devDependencies": {
+    "@ragempcommunity/types-client": "^2.1.5",
+    "@v-rp/tsconfig": "workspace:^"
+  }
+}

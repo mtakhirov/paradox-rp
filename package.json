@@ -1,0 +1,20 @@
+{
+  "name": "v-rp",
+  "private": "true",
+  "version": "1.0.0",
+  "description": "V-RP - Rage:MP roleplay server files",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "keywords": [
+    "v-rp",
+    "ragemp",
+    "roleplay"
+  ],
+  "license": "MIT",
+  "scripts": {},
+  "dependencies": {
+    "turbo": "^1.10.16"
+  }
+}

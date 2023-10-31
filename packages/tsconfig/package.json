@@ -1,0 +1,10 @@
+{
+  "name": "@v-rp/tsconfig",
+  "version": "1.0.0",
+  "files": [
+    "tsconfig.base.json",
+    "client.json",
+    "server.json",
+    "cef.json"
+  ]
+}
