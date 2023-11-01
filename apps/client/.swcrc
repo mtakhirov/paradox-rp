@@ -1,0 +1,30 @@
+{
+  "$schema": "https://json.schemastore.org/swcrc",
+
+  "jsc": {
+    "parser": {
+      "syntax": "typescript",
+      "dynamicImport": true,
+      "decorators": true
+    },
+    "transform": {
+      "legacyDecorator": true,
+      "decoratorMetadata": true
+    },
+    "target": "es5",
+    "loose": true,
+    "minify": {
+      "compress": {
+        "drop_console": true
+      },
+      "mangle": true
+    }
+  },
+  "module": {
+    "strict": false,
+    "strictMode": true,
+    "lazy": true,
+    "noInterop": true,
+    "type": "commonjs"
+  }
+}

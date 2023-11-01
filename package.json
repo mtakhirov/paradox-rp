@@ -1,6 +1,5 @@
 {
   "name": "v-rp",
-  "private": "true",
   "version": "1.0.0",
   "description": "V-RP - Rage:MP roleplay server files",
   "workspaces": [

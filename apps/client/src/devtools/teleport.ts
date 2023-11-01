@@ -36,3 +36,5 @@ export class Teleport {
     return zCoord + 0.5;
   };
 }
+
+new Teleport();

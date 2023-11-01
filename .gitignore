@@ -3,6 +3,7 @@
 .env.*.local
 
 # Logs
+.turbo
 *.log
 
 # Dependencies

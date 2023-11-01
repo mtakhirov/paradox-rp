@@ -1,3 +1,2 @@
-import { Teleport } from "./teleport";
-
-new Teleport();
+import "./teleport";
+import "./position";
