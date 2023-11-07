@@ -1,13 +1,7 @@
-export class CoreModule {
-  public constructor() {
-    mp.events.add({
-      playerJoin: this.onPlayerJoin,
-    });
-  }
+import { CoreModule } from "./events";
 
-  private onPlayerJoin: IServerEvents["playerJoin"] = player => {
-    player.outputChatBox("Welcome to ~g~ParadoxRP");
-  };
+function bootstrap() {
+  new CoreModule();
 }
 
-new CoreModule();
+bootstrap();

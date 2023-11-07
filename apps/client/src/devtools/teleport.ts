@@ -1,6 +1,16 @@
 export class Teleport {
+  protected g_bIslandLoaded = false;
+
   public constructor() {
     mp.keys.bind(0x73, false, this.teleportWaypoint);
+
+    mp.keys.bind(0x72 /* F3 */, false, () => {
+      this.g_bIslandLoaded = !this.g_bIslandLoaded;
+      mp.game.invoke("0x9A9D1BA639675CF1", "HeistIsland", this.g_bIslandLoaded);
+      mp.game.invoke("0x5E1460624D194A38", this.g_bIslandLoaded); // for island map in pause menu and minimap
+
+      mp.gui.chat.push(`Island ${this.g_bIslandLoaded ? "loaded" : "unloaded"}`);
+    });
   }
 
   private teleportWaypoint: Function = () => {

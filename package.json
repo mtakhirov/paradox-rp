@@ -12,7 +12,10 @@
     "roleplay"
   ],
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "build": "turbo build",
+    "server:start": ""
+  },
   "dependencies": {
     "turbo": "^1.10.16"
   }

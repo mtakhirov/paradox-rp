@@ -3,17 +3,16 @@ export class Voice {
   private KEY_HOLD = true;
 
   protected static listeners = new Map<number, PlayerMp>();
-  protected static interval?: number;
+  protected static interval?: NodeJS.Timeout;
 
   public constructor() {
     mp.keys.bind(this.KEY_B, this.KEY_HOLD, () => {
-      //   const player = mp.players.local;
-      mp.voiceChat.muted = !mp.voiceChat.muted;
-      mp.game.graphics.notify("Voice Chat: " + (!mp.voiceChat.muted ? "~g~enabled" : "~r~disabled"));
+      mp.voiceChat.muted = false;
       mp.game.graphics.notify("Pressed");
     });
 
     mp.keys.bind(this.KEY_B, false, () => {
+      mp.voiceChat.muted = true;
       mp.game.graphics.notify("Cancelled");
     });
 

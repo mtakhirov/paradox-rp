@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build:compile",
-    "build:compile": "spack --config ./spack.config.js"
+    "build:compile": "swc src -d dist -D"
   },
   "dependencies": {
     "typescript": "^5.2.2"
@@ -12,6 +12,7 @@
     "@ragempcommunity/types-client": "^2.1.5",
     "@swc/cli": "^0.1.62",
     "@swc/core": "^1.3.95",
+    "@types/node": "^20.8.10",
     "@v-rp/tsconfig": "workspace:^"
   }
 }

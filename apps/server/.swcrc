@@ -21,6 +21,8 @@
     }
   },
   "module": {
+    "resolveFully": true,
+    "noInterop": true,
     "type": "commonjs"
   }
 }

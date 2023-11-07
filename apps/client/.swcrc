@@ -11,19 +11,20 @@
       "legacyDecorator": true,
       "decoratorMetadata": true
     },
-    "target": "es5",
-    "loose": true,
-    "minify": {
-      "compress": {
-        "drop_console": true
-      },
-      "mangle": true
-    }
+    "loose": false,
+    "preserveAllComments": false,
+    "target": "esnext"
+    // "loose": true,
+    // "minify": {
+    //   "compress": {
+    //     "drop_console": true
+    //   },
+    //   "mangle": true
+    // }
   },
   "module": {
-    "strict": false,
+    "strict": true,
     "strictMode": true,
-    "lazy": true,
     "noInterop": true,
     "type": "commonjs"
   }
